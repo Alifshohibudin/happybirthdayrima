@@ -6,6 +6,7 @@ import { useRef, useState } from "react";
 import { Volume2, VolumeX } from "lucide-react"; 
 import BalloonsFalling from "@/components/BalloonsFalling";
 import Fireworks from "@/components/Fireworks";
+import Image from "next/image";
 
 export default function Scrapbook() {
   const audioRef = useRef<HTMLAudioElement | null>(null);
@@ -65,7 +66,7 @@ export default function Scrapbook() {
 
         {/* Halaman 2 */}
         <div className="flex flex-col items-center justify-center h-full bg-white p-6">
-          <img
+          <Image
             src="/1.jpg"
             alt="Memory 1"
             className="w-96 h-96 object-cover rounded-lg shadow mb-4"
@@ -84,7 +85,7 @@ export default function Scrapbook() {
 
         {/* Halaman 3 */}
         <div className="flex flex-col items-center justify-center h-full bg-white p-6">
-          <img
+          <Image
             src="/2.jpg"
             alt="Memory 2"
             className="w-full h-full object-cover rounded-lg shadow mb-4"
@@ -93,7 +94,7 @@ export default function Scrapbook() {
 
         {/* Halaman 4 */}
         <div className="flex flex-col items-center justify-center h-full bg-white p-6">
-          <img
+          <Image
             src="/3.jpg"
             alt="Memory 3"
             className="w-100 h-100 object-cover rounded-lg shadow mb-4"
@@ -109,7 +110,7 @@ export default function Scrapbook() {
 
         {/* Halaman 5 */}
         <div className="flex flex-col items-center justify-center h-full bg-white p-6 text-center">
-          <img 
+          <Image 
           src="/4.jpg" 
           alt="Memory 4" 
           className="w-full h-full object-cover rounded-lg shadow mb-4" 
@@ -118,7 +119,7 @@ export default function Scrapbook() {
 
         {/* Halaman 6 */}
         <div className="flex flex-col items-center justify-center h-full bg-white p-6 text-center">
-          <img 
+          <Image 
           src="/5.jpg" 
           alt="Memory 5" 
           className="w-full h-full object-cover rounded-lg shadow mb-4" 
@@ -127,7 +128,7 @@ export default function Scrapbook() {
 
         {/* Halaman 7 */}
         <div className="flex flex-col items-center justify-center h-full bg-white p-6 text-center">
-          <img 
+          <Image 
           src="/6.jpg" 
           alt="Memory 6" 
           className="w-full h-full object-cover rounded-lg shadow mb-4" 
@@ -136,7 +137,7 @@ export default function Scrapbook() {
 
         {/* Halaman 8 */}
         <div className="flex flex-col items-center justify-center h-full bg-white p-6 text-center">
-          <img 
+          <Image 
           src="/7.jpg" 
           alt="Memory 7" 
           className="w-full h-full object-cover rounded-lg shadow mb-4" 
@@ -145,7 +146,7 @@ export default function Scrapbook() {
 
         {/* Halaman 9 */}
         <div className="flex flex-col items-center justify-center h-full bg-white p-6 text-center">
-          <img 
+          <Image 
           src="/8.jpg" 
           alt="Memory 8" 
           className="w-full h-full object-cover rounded-lg shadow mb-4" 
@@ -154,7 +155,7 @@ export default function Scrapbook() {
 
         {/* Halaman 10 */}
         <div className="flex flex-col items-center justify-center h-full bg-white p-6 text-center">
-          <img 
+          <Image 
           src="/9.jpg" 
           alt="Memory 9" 
           className="w-full h-full object-cover rounded-lg shadow mb-4" 
@@ -163,7 +164,7 @@ export default function Scrapbook() {
 
         {/* Halaman 11 */}
         <div className="flex flex-col items-center justify-center h-full bg-white p-6 text-center">
-          <img 
+          <Image 
           src="/10.jpg" 
           alt="Memory 10" 
           className="w-full h-full object-cover rounded-lg shadow mb-4" 
@@ -172,7 +173,7 @@ export default function Scrapbook() {
 
         {/* Halaman 12 */}
         <div className="flex flex-col items-center justify-center h-full bg-white p-6 text-center">
-          <img 
+          <Image 
           src="/11.jpg" 
           alt="Memory 11" 
           className="w-full h-full object-cover rounded-lg shadow mb-4" 
@@ -181,7 +182,7 @@ export default function Scrapbook() {
 
         {/* Halaman 13 */}
         <div className="flex flex-col items-center justify-center h-full bg-white p-6 text-center">
-          <img 
+          <Image 
           src="/12.jpg" 
           alt="Memory 12" 
           className="w-full h-full object-cover rounded-lg shadow mb-4" 
@@ -190,7 +191,7 @@ export default function Scrapbook() {
 
         {/* Halaman 14 */}
         <div className="flex flex-col items-center justify-center h-full bg-white p-6 text-center">
-          <img 
+          <Image 
           src="/13.jpg" 
           alt="Memory 13" 
           className="w-full h-full object-cover rounded-lg shadow mb-4" 
@@ -199,7 +200,7 @@ export default function Scrapbook() {
 
         {/* Halaman 15 */}
         <div className="flex flex-col items-center justify-center h-full bg-white p-6 text-center">
-          <img 
+          <Image 
           src="/14.jpg" 
           alt="Memory 14" 
           className="w-full h-full object-cover rounded-lg shadow mb-4" 
@@ -208,7 +209,7 @@ export default function Scrapbook() {
 
          {/* Halaman 16 */}
         <div className="flex flex-col items-center justify-center h-full bg-white p-6 text-center">
-          <img 
+          <Image 
           src="/15.jpg" 
           alt="Memory 15" 
           className="w-full h-full object-cover rounded-lg shadow mb-4" 
@@ -217,7 +218,7 @@ export default function Scrapbook() {
 
          {/* Halaman 17 */}
         <div className="flex flex-col items-center justify-center h-full bg-white p-6 text-center">
-          <img 
+          <Image 
           src="/16.jpg" 
           alt="Memory 16" 
           className="w-full h-full object-cover rounded-lg shadow mb-4" 
@@ -237,7 +238,7 @@ Happy birthday, my everything. I love you endlessly.
         
          {/* Halaman 18 */}
         <div className="flex flex-col items-center justify-center h-full bg-white p-6 text-center">
-          <img 
+          <Image 
           src="/17.jpg" 
           alt="Memory 17" 
           className="w-full h-full object-cover rounded-lg shadow mb-4" 
@@ -246,7 +247,7 @@ Happy birthday, my everything. I love you endlessly.
 
          {/* Halaman 19 */}
         <div className="flex flex-col items-center justify-center h-full bg-white p-6 text-center">
-          <img 
+          <Image 
           src="/18.jpg" 
           alt="Memory 18" 
           className="w-full h-full object-cover rounded-lg shadow mb-4" 
@@ -255,7 +256,7 @@ Happy birthday, my everything. I love you endlessly.
 
          {/* Halaman 20 */}
         <div className="flex flex-col items-center justify-center h-full bg-white p-6 text-center">
-          <img 
+          <Image 
           src="/19.jpg" 
           alt="Memory 19" 
           className="w-full h-full object-cover rounded-lg shadow mb-4" 
@@ -264,7 +265,7 @@ Happy birthday, my everything. I love you endlessly.
 
          {/* Halaman 21 */}
         <div className="flex flex-col items-center justify-center h-full bg-white p-6 text-center">
-          <img 
+          <Image 
           src="/20.jpg" 
           alt="Memory 20" 
           className="w-full h-full object-cover rounded-lg shadow mb-4" 
@@ -273,7 +274,7 @@ Happy birthday, my everything. I love you endlessly.
 
          {/* Halaman 22 */}
         <div className="flex flex-col items-center justify-center h-full bg-white p-6 text-center">
-          <img 
+          <Image 
           src="/21.jpg" 
           alt="Memory 21" 
           className="w-full h-full object-cover rounded-lg shadow mb-4" 
@@ -282,7 +283,7 @@ Happy birthday, my everything. I love you endlessly.
 
          {/* Halaman 23 */}
         <div className="flex flex-col items-center justify-center h-full bg-white p-6 text-center">
-          <img 
+          <Image 
           src="/22.jpg" 
           alt="Memory 22" 
           className="w-full h-full object-cover rounded-lg shadow mb-4" 
@@ -292,7 +293,7 @@ Happy birthday, my everything. I love you endlessly.
         {/* Halaman 24 */}
         
         <div className="flex flex-col items-center justify-center h-full bg-white p-6 text-center">
-          <img 
+          <Image 
           src="/23.jpg" 
           alt="Memory 23" 
           className="w-full h-full object-cover rounded-lg shadow mb-4" 
@@ -301,7 +302,7 @@ Happy birthday, my everything. I love you endlessly.
         
         {/* Halaman 25 */}
         <div className="flex flex-col items-center justify-center h-full bg-white p-6 text-center">
-          <img 
+          <Image 
           src="/24.jpg" 
           alt="Memory 24" 
           className="w-full h-full object-cover rounded-lg shadow mb-4" 
@@ -310,7 +311,7 @@ Happy birthday, my everything. I love you endlessly.
         
         {/* Halaman 26 */}
         <div className="flex flex-col items-center justify-center h-full bg-white p-6 text-center">
-          <img 
+          <Image 
           src="/25.jpg" 
           alt="Memory 25" 
           className="w-full h-full object-cover rounded-lg shadow mb-4" 
@@ -319,7 +320,7 @@ Happy birthday, my everything. I love you endlessly.
         
         {/* Halaman 27 */}
         <div className="flex flex-col items-center justify-center h-full bg-white p-6 text-center">
-          <img 
+          <Image 
           src="/26.jpg" 
           alt="Memory 26" 
           className="w-full h-full object-cover rounded-lg shadow mb-4" 
@@ -328,7 +329,7 @@ Happy birthday, my everything. I love you endlessly.
         
         {/* Halaman 28 */}
         <div className="flex flex-col items-center justify-center h-full bg-white p-6 text-center">
-          <img 
+          <Image 
           src="/27.jpg" 
           alt="Memory 27" 
           className="w-full h-full object-cover rounded-lg shadow mb-4" 
@@ -337,7 +338,7 @@ Happy birthday, my everything. I love you endlessly.
         
         {/* Halaman 29 */}
         <div className="flex flex-col items-center justify-center h-full bg-white p-6 text-center">
-          <img 
+          <Image 
           src="/28.jpg" 
           alt="Memory 28" 
           className="w-full h-full object-cover rounded-lg shadow mb-4" 

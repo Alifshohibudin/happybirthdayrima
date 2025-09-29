@@ -1,7 +1,18 @@
 "use client";
 
 import { useEffect, useRef } from "react";
-import { useRouter } from "next/navigation"; // ⬅️ pakai ini, bukan next/router
+import { useRouter } from "next/navigation";
+
+// Definisi tipe Particle
+interface Particle {
+  x: number;
+  y: number;
+  radius: number;
+  color: string;
+  vx: number;
+  vy: number;
+  life: number;
+}
 
 export default function Fireworks() {
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
@@ -11,7 +22,7 @@ export default function Fireworks() {
     const canvas = canvasRef.current!;
     const ctx = canvas.getContext("2d")!;
     let animationId: number;
-    let particles: any[] = [];
+    let particles: Particle[] = [];
 
     // set ukuran canvas
     const resizeCanvas = () => {
