@@ -1,12 +1,13 @@
 "use client";
 
-import HTMLFlipBook from "react-pageflip";
+
 import { useRouter } from "next/navigation";
 import { useRef, useState } from "react";
 import { Volume2, VolumeX } from "lucide-react"; 
 import BalloonsFalling from "@/components/BalloonsFalling";
 import Fireworks from "@/components/Fireworks";
 import Image from "next/image";
+import FlipBook, {FlipBookRef} from "@/components/flipbook/FlipBook";
 
 export default function Scrapbook() {
   const audioRef = useRef<HTMLAudioElement | null>(null);
@@ -40,7 +41,7 @@ export default function Scrapbook() {
         )}
       </button>
 
-      <HTMLFlipBook
+      <FlipBook 
         width={500}
         height={700}
         size="fixed"
@@ -69,6 +70,8 @@ export default function Scrapbook() {
           <Image
             src="/1.jpg"
             alt="Memory 1"
+            width={300}
+            height={300}
             className="w-96 h-96 object-cover rounded-lg shadow mb-4"
           />
           <p className="text-gray-600 text-center text-2xl">
@@ -88,7 +91,8 @@ export default function Scrapbook() {
           <Image
             src="/2.jpg"
             alt="Memory 2"
-            className="w-full h-full object-cover rounded-lg shadow mb-4"
+            fill
+            className="object-cover rounded-lg shadow mb-4"
           />
         </div>
 
@@ -97,6 +101,7 @@ export default function Scrapbook() {
           <Image
             src="/3.jpg"
             alt="Memory 3"
+            fill
             className="w-100 h-100 object-cover rounded-lg shadow mb-4"
           />
           <p className="text-gray-600">
@@ -113,6 +118,7 @@ export default function Scrapbook() {
           <Image 
           src="/4.jpg" 
           alt="Memory 4" 
+          fill
           className="w-full h-full object-cover rounded-lg shadow mb-4" 
           />
         </div>
@@ -122,6 +128,7 @@ export default function Scrapbook() {
           <Image 
           src="/5.jpg" 
           alt="Memory 5" 
+          fill
           className="w-full h-full object-cover rounded-lg shadow mb-4" 
           />
         </div>
@@ -130,7 +137,8 @@ export default function Scrapbook() {
         <div className="flex flex-col items-center justify-center h-full bg-white p-6 text-center">
           <Image 
           src="/6.jpg" 
-          alt="Memory 6" 
+          alt="Memory 6"
+          fill 
           className="w-full h-full object-cover rounded-lg shadow mb-4" 
           />
         </div>
@@ -140,6 +148,7 @@ export default function Scrapbook() {
           <Image 
           src="/7.jpg" 
           alt="Memory 7" 
+          fill
           className="w-full h-full object-cover rounded-lg shadow mb-4" 
           />
         </div>
@@ -149,6 +158,7 @@ export default function Scrapbook() {
           <Image 
           src="/8.jpg" 
           alt="Memory 8" 
+          fill
           className="w-full h-full object-cover rounded-lg shadow mb-4" 
           />
         </div>
@@ -158,6 +168,7 @@ export default function Scrapbook() {
           <Image 
           src="/9.jpg" 
           alt="Memory 9" 
+          fill
           className="w-full h-full object-cover rounded-lg shadow mb-4" 
           />
         </div>
@@ -167,6 +178,7 @@ export default function Scrapbook() {
           <Image 
           src="/10.jpg" 
           alt="Memory 10" 
+          fill
           className="w-full h-full object-cover rounded-lg shadow mb-4" 
           />
         </div>
@@ -176,6 +188,7 @@ export default function Scrapbook() {
           <Image 
           src="/11.jpg" 
           alt="Memory 11" 
+          fill
           className="w-full h-full object-cover rounded-lg shadow mb-4" 
           />
         </div>
@@ -185,6 +198,7 @@ export default function Scrapbook() {
           <Image 
           src="/12.jpg" 
           alt="Memory 12" 
+          fill
           className="w-full h-full object-cover rounded-lg shadow mb-4" 
           />
         </div>
@@ -194,6 +208,7 @@ export default function Scrapbook() {
           <Image 
           src="/13.jpg" 
           alt="Memory 13" 
+          fill
           className="w-full h-full object-cover rounded-lg shadow mb-4" 
           />
         </div>
@@ -203,6 +218,7 @@ export default function Scrapbook() {
           <Image 
           src="/14.jpg" 
           alt="Memory 14" 
+          fill
           className="w-full h-full object-cover rounded-lg shadow mb-4" 
           />
         </div>
@@ -212,6 +228,7 @@ export default function Scrapbook() {
           <Image 
           src="/15.jpg" 
           alt="Memory 15" 
+          fill
           className="w-full h-full object-cover rounded-lg shadow mb-4" 
           />
         </div>
@@ -221,6 +238,7 @@ export default function Scrapbook() {
           <Image 
           src="/16.jpg" 
           alt="Memory 16" 
+          fill
           className="w-full h-full object-cover rounded-lg shadow mb-4" 
           />
         </div>
@@ -241,6 +259,7 @@ Happy birthday, my everything. I love you endlessly.
           <Image 
           src="/17.jpg" 
           alt="Memory 17" 
+          fill
           className="w-full h-full object-cover rounded-lg shadow mb-4" 
           />
         </div>
@@ -250,6 +269,7 @@ Happy birthday, my everything. I love you endlessly.
           <Image 
           src="/18.jpg" 
           alt="Memory 18" 
+          fill
           className="w-full h-full object-cover rounded-lg shadow mb-4" 
           />
         </div>
@@ -259,6 +279,7 @@ Happy birthday, my everything. I love you endlessly.
           <Image 
           src="/19.jpg" 
           alt="Memory 19" 
+          fill
           className="w-full h-full object-cover rounded-lg shadow mb-4" 
           />
         </div>
@@ -268,6 +289,7 @@ Happy birthday, my everything. I love you endlessly.
           <Image 
           src="/20.jpg" 
           alt="Memory 20" 
+          fill
           className="w-full h-full object-cover rounded-lg shadow mb-4" 
           />
         </div>
@@ -277,6 +299,7 @@ Happy birthday, my everything. I love you endlessly.
           <Image 
           src="/21.jpg" 
           alt="Memory 21" 
+          fill
           className="w-full h-full object-cover rounded-lg shadow mb-4" 
           />
         </div>
@@ -286,6 +309,7 @@ Happy birthday, my everything. I love you endlessly.
           <Image 
           src="/22.jpg" 
           alt="Memory 22" 
+          fill
           className="w-full h-full object-cover rounded-lg shadow mb-4" 
           />
         </div>
@@ -296,6 +320,7 @@ Happy birthday, my everything. I love you endlessly.
           <Image 
           src="/23.jpg" 
           alt="Memory 23" 
+          fill
           className="w-full h-full object-cover rounded-lg shadow mb-4" 
           />
         </div> 
@@ -305,6 +330,7 @@ Happy birthday, my everything. I love you endlessly.
           <Image 
           src="/24.jpg" 
           alt="Memory 24" 
+          fill
           className="w-full h-full object-cover rounded-lg shadow mb-4" 
           />
         </div> 
@@ -314,6 +340,7 @@ Happy birthday, my everything. I love you endlessly.
           <Image 
           src="/25.jpg" 
           alt="Memory 25" 
+          fill
           className="w-full h-full object-cover rounded-lg shadow mb-4" 
           />
         </div> 
@@ -323,6 +350,7 @@ Happy birthday, my everything. I love you endlessly.
           <Image 
           src="/26.jpg" 
           alt="Memory 26" 
+          fill
           className="w-full h-full object-cover rounded-lg shadow mb-4" 
           />
         </div> 
@@ -332,6 +360,7 @@ Happy birthday, my everything. I love you endlessly.
           <Image 
           src="/27.jpg" 
           alt="Memory 27" 
+          fill
           className="w-full h-full object-cover rounded-lg shadow mb-4" 
           />
         </div> 
@@ -341,6 +370,7 @@ Happy birthday, my everything. I love you endlessly.
           <Image 
           src="/28.jpg" 
           alt="Memory 28" 
+          fill
           className="w-full h-full object-cover rounded-lg shadow mb-4" 
           />
         </div> 
@@ -366,7 +396,7 @@ Happy birthday, my everything. I love you endlessly.
         </div>
 
 
-      </HTMLFlipBook>
+      </FlipBook>
       {showSurprise && (
         <>
           <BalloonsFalling />
