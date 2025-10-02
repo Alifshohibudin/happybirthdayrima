@@ -27,33 +27,11 @@ export default function Header() {
             Kerajaan ALMA
           </span>
         </Link>
+        
+        <Cake className="text-pink-400 w-6 h-6" />
 
-        {/* Desktop Menu */}
-        <ul className="hidden md:flex gap-6 text-white">
-          <li><Link href="#" className="hover:text-pink-400">
-          <Cake className="text-pink-400 w-6 h-6" />
-          </Link></li>
-        </ul>
-
-        {/* Mobile Menu Button */}
-        <button
-          onClick={() => setIsOpen(!isOpen)}
-          className="md:hidden text-white"
-        >
-          {isOpen ? <X size={28} /> : <Menu size={28} />}
-        </button>
+       
       </div>
-
-      {/* Mobile Dropdown */}
-      {isOpen && (
-        <div className="md:hidden bg-black/90 backdrop-blur-md px-6 py-4">
-          <ul className="flex flex-col gap-4 text-white">
-            <li><Link href="/" className="hover:text-pink-400" onClick={() => setIsOpen(false)}>Home</Link></li>
-            <li><Link href="/project" className="hover:text-pink-400" onClick={() => setIsOpen(false)}>Project</Link></li>
-            <li><Link href="/contact" className="hover:text-pink-400" onClick={() => setIsOpen(false)}>Contact</Link></li>
-          </ul>
-        </div>
-      )}
     </nav>
   );
 }

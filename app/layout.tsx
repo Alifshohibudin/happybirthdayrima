@@ -15,6 +15,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Happy Birthday Rima!",
   description: "Interactive birthday surprise for Rima",
+  viewport: "width=device-width, initial-scale=1.0",
 };
 
 export default function RootLayout({
