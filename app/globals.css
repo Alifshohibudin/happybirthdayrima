@@ -3,16 +3,53 @@
 @tailwind utilities;
 
 @keyframes fall {
-  0% { transform: translateY(-100vh) scale(1); opacity: 1; }
-  100% { transform: translateY(100vh) scale(0.5); opacity: 0.8; }
+  0% { 
+    transform: translateY(-100vh) scale(1); 
+    opacity: 1; 
+  }
+  100% { 
+    transform: translateY(100vh) scale(0.5); 
+    opacity: 0.8; 
+  }
 }
 
 .balloon {
   position: absolute;
   top: -150px;
-  width: 60px;
-  height: 80px;
+
+  /* Ukuran responsif dengan clamp */
+  width: clamp(30px, 6vw, 80px);
+  height: clamp(40px, 8vw, 100px);
+
   background: radial-gradient(circle at 30% 30%, #ff80bf, #ff4da6);
   border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
-  animation: fall linear infinite;
+
+  /* Animasi */
+  animation: fall 12s linear infinite;
+}
+
+/* Variasi tambahan supaya natural */
+.balloon:nth-child(2) {
+  left: 20%;
+  animation-duration: 10s;
+  animation-delay: 2s;
+  background: radial-gradient(circle at 30% 30%, #80dfff, #3399ff);
+}
+.balloon:nth-child(3) {
+  left: 40%;
+  animation-duration: 14s;
+  animation-delay: 4s;
+  background: radial-gradient(circle at 30% 30%, #ffff80, #ffcc00);
+}
+.balloon:nth-child(4) {
+  left: 60%;
+  animation-duration: 9s;
+  animation-delay: 3s;
+  background: radial-gradient(circle at 30% 30%, #b3ffb3, #00cc44);
+}
+.balloon:nth-child(5) {
+  left: 80%;
+  animation-duration: 11s;
+  animation-delay: 5s;
+  background: radial-gradient(circle at 30% 30%, #ffb380, #ff6600);
 }
