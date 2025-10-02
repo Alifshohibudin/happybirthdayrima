@@ -50,7 +50,7 @@ export default function Scrapbook() {
       >
         {/* Page 1 - Opening */}
         <div className="flex flex-col items-center justify-center h-full bg-white p-6 sm:p-8 text-center">
-          <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold text-pink-500 mb-6 mt-40">
+          <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold text-pink-500 mb-6 mt-16">
             🎂 Selamat Ulang Tahun Sayangku.. Yimmaaa 🎉
           </h1>
           <p className="text-gray-700 text-sm sm:text-lg md:text-xl mb-4">
@@ -97,12 +97,12 @@ export default function Scrapbook() {
             key={idx}
             className="flex flex-col items-center justify-center h-full bg-white p-4 sm:p-6 text-center overflow-hidden"
           >
-            <div className="relative w-full h-full flex items-center justify-center">
+            <div className="w-full h-full flex items-center justify-center">
               <Image
                 src={page.src}
                 alt={`Memory ${idx + 1}`}
-                width={234}
-                height={234}
+                width={600}
+                height={600}
                 className="w-full h-full object-cover rounded-lg mt-32 mb-32 pb-32"
               />
               
@@ -118,11 +118,17 @@ export default function Scrapbook() {
         ))}
 
         {/* Page - Love Message */}
-        <div className="flex flex-col items-center justify-center h-full bg-white p-4 sm:p-6 text-center">
-          <h2 className="text-lg sm:text-xl md:text-2xl font-bold text-purple-500 mb-2 mt-56">
+        <div className="flex flex-col h-full bg-white p-6 sm:p-8 overflow-hidden">
+          
+          <h1 className="text-gray-700 text-2xl font-bold text-center sm:text-justify mb-4">Hari ini bukan cuma spesial buat kamu,</h1>
+          <p className="text-gray-700 text-center sm:text-justify text-sm md:text-lg flex-grow">
+             tapi juga buat aku… karena aku beruntung banget bisa punya kamu di hidupku. You’re literally my safe place, my partner in crime, and the best thing that ever happened to me.
+Semoga di umur yang baru ini, semua mimpi kamu jadi nyata, dan aku janji bakal stay by your side no matter what. Honestly, I don’t need anything fancy in this world, as long as I have you
+          </p>
+         <h2 className="text-lg sm:text-xl md:text-2xl font-bold text-purple-500 mt-6 mb-2 text-center">
             ✨ Love You More ✨
           </h2>
-          <p className="text-gray-700 text-sm sm:text-base md:text-lg ">
+          <p className="text-gray-700 text-sm sm:text-base md:text-lg text-center sm:text-justify">
             With you, I don’t need a perfect world, karena dunia yang aku mau ya
             dunia yang ada kamu di dalamnya. 💕 Happy birthday, my everything. I
             love you endlessly.
@@ -130,11 +136,11 @@ export default function Scrapbook() {
         </div>
 
         {/* Page - Final Love Message */}
-        <div className="flex flex-col items-center justify-center h-full bg-white p-4 sm:p-6 text-center mt-5">
-          <h2 className="text-lg sm:text-xl md:text-2xl font-bold text-purple-500 mb-2 mt-56">
+        <div className="flex flex-col h-full bg-white p-6 sm:p-8 justify-center">
+  <h2 className="text-lg sm:text-xl md:text-2xl font-bold text-purple-500 mb-4 text-center">
             ✨ Am Always Loving U ✨
           </h2>
-          <p className="text-gray-700 text-sm sm:text-base md:text-lg">
+          <p className="text-gray-700 text-sm sm:text-base md:text-lg text-center sm:text-justify">
             Semoga di umur yang baru ini, semua doa-doa indah kamu jadi nyata.
             Dan aku janji, I’ll always be your number one supporter, your
             shoulder to lean on, and the one who never lets go babyy.......
@@ -142,7 +148,7 @@ export default function Scrapbook() {
         </div>
 
         {/* Page - Surprise Button */}
-        <div className="flex flex-col items-center justify-center h-full p-6 text-center">
+        <div className="flex flex-col h-full bg-white p-6 sm:p-8 justify-center items-center">
           <button
             onClick={() => setShowSurprise(true)}
             className="px-6 py-3 bg-pink-500 text-white rounded-full shadow-lg hover:bg-pink-600 transition text-sm sm:text-base md:text-lg mt-56"
